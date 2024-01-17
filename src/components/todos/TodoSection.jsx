@@ -55,6 +55,16 @@ export default function TodoSection() {
     <div>
       <h2>Todos</h2>
       <h3>TotalDone Todos: {mainTodoArr.filter((tObj) => tObj.completed).length}</h3>
+
+      <form>
+        <fieldset>
+          <legend>Add todo</legend>
+          {/* susieti su state */}
+          <input type='text' placeholder='add new todo' />
+          <button type='submit'>Add</button>
+        </fieldset>
+      </form>
+
       <ul>
         {mainTodoArr.map((tObj) => (
           <li key={tObj.id}>
