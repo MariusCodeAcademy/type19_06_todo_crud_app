@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function SingleTodo({ todoTitle, todoComplete }) {
+export default function SingleTodo({ todoTitle, todoComplete, onDelete }) {
   // const { todoTitle, todoComplete } = props;
 
   const [isDone, setIsDone] = useState(todoComplete);
@@ -11,11 +11,17 @@ export default function SingleTodo({ todoTitle, todoComplete }) {
     setIsDone(!isDone);
   }
 
+  function deleteSingleTodo() {
+    // validacija
+    onDelete();
+  }
+
   return (
     <div className='flex'>
       <h4>{title}</h4>
       <p>{isDone ? 'Complete' : 'Incomplete'} </p>
       <button onClick={makeDone}>{isDone ? 'Undo' : 'Make Complete'} </button>
+      <button onClick={onDelete}>Delete</button>
     </div>
   );
 }

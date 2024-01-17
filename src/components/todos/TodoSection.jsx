@@ -34,16 +34,25 @@ export default function TodoSection() {
     setMainTodoArr(arrAfterDelete);
   }
 
+  function handleDelete(idToDelete) {
+    console.log('idToDelete ===', idToDelete);
+    // setMainTodoArr(mainTodoArr.filter((tObj) => tObj.id !== idToDelete));
+  }
+
   console.log('initTodos ===', initTodos);
   return (
     <div>
       <h2>Todos</h2>
       <h3>TotalDone Todos: {mainTodoArr.filter((tObj) => tObj.completed).length}</h3>
-      <button onClick={deleteNr4}>Delete todo with id 4</button>
+      <button onClick={() => handleDelete(3)}>Delete todo with id 4</button>
       <ul>
         {mainTodoArr.map((tObj) => (
           <li key={tObj.id}>
-            <SingleTodo todoTitle={tObj.text} todoComplete={tObj.completed} />
+            <SingleTodo
+              onDelete={handleDelete}
+              todoTitle={tObj.text}
+              todoComplete={tObj.completed}
+            />
           </li>
         ))}
       </ul>
@@ -54,6 +63,7 @@ export default function TodoSection() {
         {initTodos.map((tObj) => (
           <li key={tObj.id}>
             id:{tObj.id} {tObj.text} - {tObj.completed ? 'Complete' : 'Incomplete'}
+            <button>delete</button>
           </li>
         ))}
       </ul>
