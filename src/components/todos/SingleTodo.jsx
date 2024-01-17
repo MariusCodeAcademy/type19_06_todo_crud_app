@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 export default function SingleTodo({ todoTitle, todoComplete }) {
+  // const { todoTitle, todoComplete } = props;
+
   const [isDone, setIsDone] = useState(todoComplete);
 
   const [title, setTitle] = useState(todoTitle);
