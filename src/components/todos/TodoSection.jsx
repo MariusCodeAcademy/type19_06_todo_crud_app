@@ -1,6 +1,6 @@
+import { v4 as makeId } from 'uuid';
 import { useState } from 'react';
 import SingleTodo from './SingleTodo';
-
 const initTodos = [
   { id: 1, text: 'Complete task 1', completed: false },
   { id: 2, text: 'Finish task 2', completed: true },
@@ -17,6 +17,7 @@ versija po istrynimo
     { id: 3, text: 'Submit task 3', completed: false }, // pokytis
     { id: 4, text: 'Review task 4', completed: true },
     { id: 5, text: 'Implement task 5', completed: false },
+    { id: 50, text: newTodoVal, completed: false }
 ]
 */
 
@@ -33,11 +34,11 @@ export default function TodoSection() {
   console.table(mainTodoArr);
 
   function handleNewTodo() {
-    console.log('adding todo');
+    console.log('adding todo', newTodoVal);
     // sukurti nauja objekta
-    // { id: 50, text: 'Complete task 1', completed: false }
+    const newTodoObj = { id: makeId(), text: newTodoVal, completed: false };
     // iskonsolinti ivesta i todo reiksme
-    // iskonsolinti obje
+    setMainTodoArr([...mainTodoArr, newTodoObj]);
   }
 
   function handleDelete(idToDelete) {
