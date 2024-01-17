@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 const initTodos = [
   { id: 1, text: 'Complete task 1', completed: false },
@@ -10,14 +10,18 @@ const initTodos = [
 
 export default function TodoSection() {
   // useState
+  const [mainTodoArr, setMainTodoArr] = useState(initTodos);
 
   return (
     <div>
       <h2>Todos</h2>
       <ul>
         {/* map per state ir make todos */}
-        <li>Complete task 1 - not done</li>
-        <li>Finish task 2 - done</li>
+        {mainTodoArr.map((tObj) => (
+          <li key={tObj.id}>
+            {tObj.text} - {tObj.completed ? 'Complete' : 'Incomplete'}
+          </li>
+        ))}
       </ul>
     </div>
   );
