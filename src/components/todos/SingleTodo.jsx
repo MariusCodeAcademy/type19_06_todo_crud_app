@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function SingleTodo({ todoTitle, todoComplete, onDelete, tId }) {
+export default function SingleTodo({ todoTitle, todoComplete, onDelete }) {
   // const { todoTitle, todoComplete } = props;
 
   const [isDone, setIsDone] = useState(todoComplete);
@@ -13,7 +13,7 @@ export default function SingleTodo({ todoTitle, todoComplete, onDelete, tId }) {
 
   function deleteSingleTodo() {
     // validacija
-    onDelete(tId);
+    onDelete();
   }
 
   return (
@@ -21,7 +21,7 @@ export default function SingleTodo({ todoTitle, todoComplete, onDelete, tId }) {
       <h4>{title}</h4>
       <p>{isDone ? 'Complete' : 'Incomplete'} </p>
       <button onClick={makeDone}>{isDone ? 'Undo' : 'Make Complete'} </button>
-      <button onClick={deleteSingleTodo}>Delete</button>
+      <button onClick={onDelete}>Delete</button>
     </div>
   );
 }

@@ -36,7 +36,7 @@ export default function TodoSection() {
 
   function handleDelete(idToDelete) {
     console.log('idToDelete ===', idToDelete);
-    // setMainTodoArr(mainTodoArr.filter((tObj) => tObj.id !== idToDelete));
+    setMainTodoArr(mainTodoArr.filter((tObj) => tObj.id !== idToDelete));
   }
 
   console.log('initTodos ===', initTodos);
@@ -49,7 +49,7 @@ export default function TodoSection() {
         {mainTodoArr.map((tObj) => (
           <li key={tObj.id}>
             <SingleTodo
-              onDelete={handleDelete}
+              onDelete={() => handleDelete(tObj.id)}
               todoTitle={tObj.text}
               todoComplete={tObj.completed}
               tId={tObj.id}
