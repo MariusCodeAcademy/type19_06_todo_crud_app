@@ -52,6 +52,7 @@ export default function TodoSection() {
               onDelete={handleDelete}
               todoTitle={tObj.text}
               todoComplete={tObj.completed}
+              tId={tObj.id}
             />
           </li>
         ))}
