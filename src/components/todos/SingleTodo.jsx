@@ -1,12 +1,13 @@
 import { useState } from 'react';
 
-export default function SingleTodo({ todoTitle, todoComplete, onDelete }) {
+export default function SingleTodo({ todoTitle, todoComplete, onDelete, onDoneUndone }) {
   // const { todoTitle, todoComplete } = props;
 
   const [title, setTitle] = useState(todoTitle);
 
   function makeDone() {
     // setIsDone(!isDone);
+    onDoneUndone();
   }
 
   function deleteSingleTodo() {

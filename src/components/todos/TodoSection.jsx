@@ -33,18 +33,34 @@ export default function TodoSection() {
 
   function handleDoneUndone(idToChange) {
     console.log('handleDoneUndone ===', idToChange);
+    // grazinti i mainTodoArr masyva su pokyciu nekeiciant orginalo
+    // const mainArrCopy = [...mainTodoArr];
+    // const elToChange = mainArrCopy.find((tObj) => tObj.id === idToChange);
+    // console.log('elToChange ===', elToChange);
+    // elToChange.completed = !elToChange.completed;
+    // setMainTodoArr(mainArrCopy);
+    const modifiedArrCopyWithChange = mainTodoArr.map((tObj) => {
+      if (tObj.id === idToChange) {
+        // grazinti kopija objeko
+        return { ...tObj, completed: !tObj.completed };
+      }
+
+      return tObj;
+    });
+    setMainTodoArr(modifiedArrCopyWithChange);
+    // idToChange === 3
   }
 
   return (
     <div>
       <h2>Todos</h2>
       <h3>TotalDone Todos: {mainTodoArr.filter((tObj) => tObj.completed).length}</h3>
-      <button onClick={() => handleDelete(3)}>Delete todo with id 4</button>
       <ul>
         {mainTodoArr.map((tObj) => (
           <li key={tObj.id}>
             <SingleTodo
               onDelete={() => handleDelete(tObj.id)}
+              onDoneUndone={() => handleDoneUndone(tObj.id)}
               todoTitle={tObj.text}
               todoComplete={tObj.completed}
             />
