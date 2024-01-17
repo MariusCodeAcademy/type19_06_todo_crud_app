@@ -21,10 +21,24 @@ versija po istrynimo
 */
 
 export default function TodoSection() {
+  const [newTodoVal, setNewTodoVal] = useState('');
+
+  function handleNewTodoTitleVal(event) {
+    setNewTodoVal(event.target.value);
+  }
+
   // useState
   const [mainTodoArr, setMainTodoArr] = useState(initTodos);
 
   console.table(mainTodoArr);
+
+  function handleNewTodo() {
+    console.log('adding todo');
+    // sukurti nauja objekta
+    // { id: 50, text: 'Complete task 1', completed: false }
+    // iskonsolinti ivesta i todo reiksme
+    // iskonsolinti obje
+  }
 
   function handleDelete(idToDelete) {
     console.log('idToDelete ===', idToDelete);
@@ -56,14 +70,20 @@ export default function TodoSection() {
       <h2>Todos</h2>
       <h3>TotalDone Todos: {mainTodoArr.filter((tObj) => tObj.completed).length}</h3>
 
-      <form>
-        <fieldset>
-          <legend>Add todo</legend>
-          {/* susieti su state */}
-          <input type='text' placeholder='add new todo' />
-          <button type='submit'>Add</button>
-        </fieldset>
-      </form>
+      {/* <form> */}
+      <fieldset>
+        <legend>Add todo</legend>
+        {/* susieti su state */}
+        <h3>{newTodoVal}</h3>
+        <input
+          value={newTodoVal}
+          onChange={handleNewTodoTitleVal}
+          type='text'
+          placeholder='add new todo'
+        />
+        <button onClick={handleNewTodo}>Add</button>
+      </fieldset>
+      {/* </form> */}
 
       <ul>
         {mainTodoArr.map((tObj) => (
