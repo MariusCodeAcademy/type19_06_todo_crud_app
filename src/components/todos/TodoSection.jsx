@@ -14,7 +14,8 @@ versija po istrynimo
 [
     { id: 1, text: 'Complete task 1', completed: false },
     { id: 2, text: 'Finish task 2', completed: true },
-    { id: 3, text: 'Submit task 3', completed: true },
+    { id: 3, text: 'Submit task 3', completed: false }, // pokytis
+    { id: 4, text: 'Review task 4', completed: true },
     { id: 5, text: 'Implement task 5', completed: false },
 ]
 */
@@ -25,21 +26,15 @@ export default function TodoSection() {
 
   console.table(mainTodoArr);
 
-  function deleteNr4() {
-    // grazinti i mainTodoArr versija masyvo kuriame nera todo su id 4
-    const arrAfterDelete = mainTodoArr.filter((tObj) => tObj.id !== 4);
-    // nemodifikuodami mainTodoArr
-    // arrAfterDelete[0].text = 'Kazkas';
-    console.table(arrAfterDelete);
-    setMainTodoArr(arrAfterDelete);
-  }
-
   function handleDelete(idToDelete) {
     console.log('idToDelete ===', idToDelete);
     setMainTodoArr(mainTodoArr.filter((tObj) => tObj.id !== idToDelete));
   }
 
-  console.log('initTodos ===', initTodos);
+  function handleDoneUndone(idToChange) {
+    console.log('handleDoneUndone ===', idToChange);
+  }
+
   return (
     <div>
       <h2>Todos</h2>
@@ -52,7 +47,6 @@ export default function TodoSection() {
               onDelete={() => handleDelete(tObj.id)}
               todoTitle={tObj.text}
               todoComplete={tObj.completed}
-              tId={tObj.id}
             />
           </li>
         ))}
