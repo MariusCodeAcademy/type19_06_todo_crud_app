@@ -65,6 +65,17 @@ export default function TodoSection() {
 
   function handleTodoEditTitle(idToUpdate, updatedText) {
     console.log('handleTodoEditTitle', idToUpdate, updatedText);
+    // i state grazinti nauja masyva su pakeista text reikme
+    setMainTodoArr(
+      mainTodoArr.map((tObj) => {
+        // jei tai tas objektas kuri norim pakest
+        if (tObj.id === idToUpdate) {
+          return { ...tObj, text: updatedText };
+        }
+
+        return tObj;
+      }),
+    );
   }
 
   return (
