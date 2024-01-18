@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="yT9yuStJUzRMGt0otY4H" name="Page-1">
-        <mxGraphModel dx="2588" dy="1635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2480" dy="1769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -194,7 +194,7 @@
                     <mxGeometry x="-740" y="-170" width="150" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="59" value="id:2&lt;br&gt;&amp;lt;SingleTodo /&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-1155" y="550" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="-1155" y="520" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="60" value="STATE:&amp;nbsp;&lt;span style=&quot;color: rgb(79, 193, 255); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px;&quot;&gt;title&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="-1155" y="610" width="120" height="30" as="geometry"/>
@@ -324,6 +324,9 @@
                 </mxCell>
                 <mxCell id="99" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;font color=&quot;#569cd6&quot;&gt;on&lt;/font&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;TodoEditTitle(id, editTitle)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="-1610" y="697.5" width="220" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="STATE:&amp;nbsp;&lt;span style=&quot;color: rgb(79, 193, 255); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px;&quot;&gt;isEditON&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1155" y="580" width="120" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
