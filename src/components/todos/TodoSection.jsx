@@ -1,6 +1,7 @@
 import { v4 as makeId } from 'uuid';
 import { useState } from 'react';
 import SingleTodo from './SingleTodo';
+import AddTodo from './AddTodo';
 const initTodos = [
   { id: 1, text: 'Complete task 1', completed: false },
   { id: 2, text: 'Finish task 2', completed: true },
@@ -22,23 +23,17 @@ versija po istrynimo
 */
 
 export default function TodoSection() {
-  const [newTodoVal, setNewTodoVal] = useState('');
-
-  function handleNewTodoTitleVal(event) {
-    setNewTodoVal(event.target.value);
-  }
-
   // useState
   const [mainTodoArr, setMainTodoArr] = useState(initTodos);
 
   console.table(mainTodoArr);
 
-  function handleNewTodo() {
+  function handleNewTodo(newTodoVal) {
     console.log('adding todo', newTodoVal);
     // sukurti nauja objekta
     const newTodoObj = { id: makeId(), text: newTodoVal, completed: false };
     // iskonsolinti ivesta i todo reiksme
-    setMainTodoArr([...mainTodoArr, newTodoObj]);
+    setMainTodoArr([newTodoObj, ...mainTodoArr]);
   }
 
   function handleDelete(idToDelete) {
@@ -71,20 +66,7 @@ export default function TodoSection() {
       <h2>Todos</h2>
       <h3>TotalDone Todos: {mainTodoArr.filter((tObj) => tObj.completed).length}</h3>
 
-      {/* <form> */}
-      <fieldset>
-        <legend>Add todo</legend>
-        {/* susieti su state */}
-        <h3>{newTodoVal}</h3>
-        <input
-          value={newTodoVal}
-          onChange={handleNewTodoTitleVal}
-          type='text'
-          placeholder='add new todo'
-        />
-        <button onClick={handleNewTodo}>Add</button>
-      </fieldset>
-      {/* </form> */}
+      <AddTodo onNewTodo={handleNewTodo} />
 
       <ul>
         {mainTodoArr.map((tObj) => (
