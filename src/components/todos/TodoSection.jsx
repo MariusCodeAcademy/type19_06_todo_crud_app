@@ -2,6 +2,8 @@ import { v4 as makeId } from 'uuid';
 import { useState } from 'react';
 import SingleTodo from './SingleTodo';
 import AddTodo from './AddTodo';
+import TodoList from './TodoList';
+
 const initTodos = [
   { id: 1, text: 'Complete task 1', completed: false },
   { id: 2, text: 'Finish task 2', completed: true },
@@ -68,18 +70,7 @@ export default function TodoSection() {
 
       <AddTodo onNewTodo={handleNewTodo} />
 
-      <ul>
-        {mainTodoArr.map((tObj) => (
-          <li key={tObj.id}>
-            <SingleTodo
-              onDelete={() => handleDelete(tObj.id)}
-              onDoneUndone={() => handleDoneUndone(tObj.id)}
-              todoTitle={tObj.text}
-              todoComplete={tObj.completed}
-            />
-          </li>
-        ))}
-      </ul>
+      <TodoList list={mainTodoArr} onDelete={handleDelete} onDoneUndone={handleDoneUndone} />
 
       <h3>init todos</h3>
       <ul>

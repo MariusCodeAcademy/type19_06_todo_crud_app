@@ -16,7 +16,7 @@ export default function SingleTodo({ todoTitle, todoComplete, onDelete, onDoneUn
   }
 
   return (
-    <div className='flex'>
+    <div className='flex between'>
       <h4>{title}</h4>
       <p>{todoComplete ? 'Complete' : 'Incomplete'} </p>
       <button onClick={makeDone}>{todoComplete ? 'Undo' : 'Make Complete'} </button>

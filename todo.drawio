@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="yT9yuStJUzRMGt0otY4H" name="Page-1">
-        <mxGraphModel dx="1467" dy="1464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2745" dy="1729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -133,14 +133,128 @@
                 <mxCell id="39" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;function&lt;/span&gt; &lt;span style=&quot;color: #dcdcaa;&quot;&gt;handleDelete&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="-50" y="70" width="250" height="30" as="geometry"/>
                 </mxCell>
+                <mxCell id="46" style="edgeStyle=none;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="42" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="42" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;function&lt;/span&gt; &lt;span style=&quot;color: #dcdcaa;&quot;&gt;handleDoneUndone&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="-40" y="130" width="250" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="43" value="&amp;lt;AddTodo /&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="300" y="190" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="45" value="Input" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="45" value="Input" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="300" y="250" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="47" target="48">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="&amp;lt;App /&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-725" y="-350" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&amp;lt;TodoSection /&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-725" y="-190" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;font color=&quot;#569cd6&quot;&gt;fn&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;handleDelete&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-740" y="-70" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;fn&lt;/span&gt; &lt;span style=&quot;color: #dcdcaa;&quot;&gt;handleDoneUndone&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-740" y="-40" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;fn&lt;/span&gt;&amp;nbsp;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;handleNewTodo&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-740" y="-10" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.881;exitY=1.045;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="52" target="53">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.137;exitY=0.992;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="52" target="56">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-910" y="20" width="480" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="&amp;lt;AddTodo /&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-550" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="Input" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-550" y="230" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="56" target="59">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="56" target="64">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" style="edgeStyle=none;html=1;entryX=0.586;entryY=0.031;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="56" target="69">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&amp;lt;TodoList /&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-900" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;state:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;mainTodoArr&lt;/span&gt;&lt;/div&gt;" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="-740" y="-130" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="id:2&lt;br&gt;&amp;lt;SingleTodo /&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1155" y="550" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="STATE:&amp;nbsp;&lt;span style=&quot;color: rgb(79, 193, 255); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px;&quot;&gt;title&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1155" y="610" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="button Toggle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1155" y="640" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="button Delete" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1155" y="670" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="button Edit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1155" y="700" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="id:3&lt;br&gt;&amp;lt;SingleTodo /&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-915" y="555" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="STATE:&amp;nbsp;&lt;span style=&quot;color: rgb(79, 193, 255); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px;&quot;&gt;title&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-915" y="615" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="button Toggle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-915" y="645" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="button Delete" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-915" y="675" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="button Edit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-915" y="705" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="id:1&lt;br&gt;&amp;lt;SingleTodo /&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-710" y="555" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="STATE:&amp;nbsp;&lt;span style=&quot;color: rgb(79, 193, 255); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px;&quot;&gt;title&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-710" y="615" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="button Toggle" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-710" y="645" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="button Delete" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-710" y="675" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="button Edit" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-710" y="705" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;font color=&quot;#569cd6&quot;&gt;on&lt;/font&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;handleDelete&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-920" y="230" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;font color=&quot;#569cd6&quot;&gt;on&lt;/font&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;handleDoneUndone&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-920" y="260" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;font color=&quot;#569cd6&quot;&gt;on&lt;/font&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;handleNewTodo&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-570" y="250" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;font color=&quot;#569cd6&quot;&gt;on&lt;/font&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;handleDelete(2)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1330" y="670" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;font color=&quot;#569cd6&quot;&gt;on&lt;/font&gt;&lt;span style=&quot;color: rgb(220, 220, 170);&quot;&gt;handleDoneUndone(2)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1360" y="640" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: &amp;quot;Cascadia code PL&amp;quot;, Menlo, Monaco, &amp;quot;Courier New&amp;quot;, monospace, Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 15px; line-height: 20px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;const&lt;/span&gt; &lt;span style=&quot;color: #4fc1ff;&quot;&gt;mainTodoArr&lt;/span&gt; &lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt; [&lt;/div&gt;&lt;div&gt;&amp;nbsp; { &lt;span style=&quot;color: #9cdcfe;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #b5cea8;&quot;&gt;1&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;text&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #ce9178;&quot;&gt;'Complete task 1'&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;completed&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #569cd6;&quot;&gt;false&lt;/span&gt; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; { &lt;span style=&quot;color: #9cdcfe;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #b5cea8;&quot;&gt;2&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;text&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #ce9178;&quot;&gt;'Finish task 2'&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;completed&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #569cd6;&quot;&gt;true&lt;/span&gt; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; { &lt;span style=&quot;color: #9cdcfe;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #b5cea8;&quot;&gt;3&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;text&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #ce9178;&quot;&gt;'Submit task 3'&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;completed&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #569cd6;&quot;&gt;true&lt;/span&gt; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; { &lt;span style=&quot;color: #9cdcfe;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #b5cea8;&quot;&gt;4&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;text&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #ce9178;&quot;&gt;'Review task 4'&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;completed&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #569cd6;&quot;&gt;true&lt;/span&gt; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; { &lt;span style=&quot;color: #9cdcfe;&quot;&gt;id&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #b5cea8;&quot;&gt;5&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;text&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #ce9178;&quot;&gt;'Implement task 5'&lt;/span&gt;, &lt;span style=&quot;color: #9cdcfe;&quot;&gt;completed&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;:&lt;/span&gt; &lt;span style=&quot;color: #569cd6;&quot;&gt;false&lt;/span&gt; },&lt;/div&gt;&lt;div&gt;];&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="-1360" y="-320" width="540" height="220" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
