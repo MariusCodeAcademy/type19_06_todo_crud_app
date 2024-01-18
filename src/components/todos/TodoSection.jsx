@@ -63,6 +63,10 @@ export default function TodoSection() {
     // idToChange === 3
   }
 
+  function handleTodoEditTitle(idToUpdate, updatedText) {
+    console.log('handleTodoEditTitle', idToUpdate, updatedText);
+  }
+
   return (
     <div>
       <h2>Todos</h2>
@@ -70,7 +74,12 @@ export default function TodoSection() {
 
       <AddTodo onNewTodo={handleNewTodo} />
 
-      <TodoList list={mainTodoArr} onDelete={handleDelete} onDoneUndone={handleDoneUndone} />
+      <TodoList
+        list={mainTodoArr}
+        onTodoEditTitle={handleTodoEditTitle}
+        onDelete={handleDelete}
+        onDoneUndone={handleDoneUndone}
+      />
 
       <h3>init todos</h3>
       <ul>
